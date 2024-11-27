@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../../../db_reference"
+		},
+		{
+			"path": "../../../db-study"
+		},
+		{
+			"path": "../../../eclipse-workspace"
+		},
+		{
+			"path": "../../../front-study"
+		},
+		{
+			"path": "../../../java_reference"
+		},
+		{
+			"path": "../../../reference"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../react-reference"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "front-study",
+		"liveServer.settings.port": 5501
+	}
+}
