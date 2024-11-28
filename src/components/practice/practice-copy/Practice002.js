@@ -1,10 +1,63 @@
-
-import './Quiz03';
+import ColorBox from './ColorBox';
+import './Practice002.css';
 import { useState } from 'react';
 
-function Quiz03() {
+function Practice002() {
 
 
+    let [boxes, setBoxes] = useState(['red', 'blue', 'green', 'black']);
+
+    return (
+        <div>
+            <div>
+                <button onClick={() => {
+                    let temp = ['red', ...boxes];
+                    setBoxes(temp);
+                }}>앞빨간박스추가</button>
+                <button onClick={() => { 
+                    let temp = ['blue', ...boxes];
+                    setBoxes(temp);
+                }}>앞파란박스추가</button>
+                <button onClick={() => {
+                    let temp = ['green', ...boxes];
+                    setBoxes(temp);
+                }}>앞초록박스추가</button>
+
+                <button onClick={() => { 
+                    let temp = [...boxes, 'red'];
+                    setBoxes(temp);
+                }}>뒤빨간박스추가</button>
+                <button onClick={() => { 
+                    let temp = [...boxes, 'blue'];
+                    setBoxes(temp);
+                }}>뒤파란박스추가</button>
+                <button onClick={() => { 
+                    let temp = [...boxes, 'green'];
+                    setBoxes(temp);
+                }}>뒤초록박스추가</button>
+                <button onClick={() => {
+                    let temp = [...boxes];
+                    temp.shift();
+                    setBoxes(temp);
+                }}>앞 박스 삭제</button>
+                <button onClick={() => {
+                    let temp = [...boxes];
+                    temp.pop();
+                    setBoxes(temp);
+                }}>뒤 박스 삭제</button>
+            </div>
+
+            {
+                //['red', 'blue', 'green', 'black']
+                boxes.map((value, index)=>{
+                    return <ColorBox bgColor={value} boxes={boxes} setBoxes={setBoxes} index={index}/>
+                })
+            }
+
+        </div>
+    );
+
+    /*
     let [boxes, setBoxes] = useState(
         [<div className="box bg-red"></div>,
         <div className="box bg-blue"></div>,
@@ -64,5 +117,7 @@ function Quiz03() {
 
         </div>
     );
+    */
 }
-export default Quiz03;
+
+export default Practice002;

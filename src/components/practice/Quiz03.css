@@ -1,25 +1,25 @@
-.red-b{
+.bg-red{
     width: 100px;
     height: 100px;
     background-color: red;
     border: 1px solid black;
     display: inline-block;
 }
-.green-b{
+.bg-green{
     width: 100px;
     height: 100px;
     background-color: green;
     border: 1px solid black;
     display: inline-block;
 }
-.blue-b{
+.bg-blue{
     width: 100px;
     height: 100px;
     background-color: blue;
     border: 1px solid black;
     display: inline-block;
 }
-.black-b{
+.bg-black{
     width: 100px;
     height: 100px;
     background-color: black;
