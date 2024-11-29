@@ -6,9 +6,13 @@ import Card from 'react-bootstrap/Card';
 
 import foodsData from '../../data/foodsData.js';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 
 function FoodCard( {food, foods, index} ) {
+    
+    let navigate = useNavigate();
 
     return (
             
@@ -17,8 +21,10 @@ function FoodCard( {food, foods, index} ) {
                     <Card.Body>
                         <Card.Title>{food.title}</Card.Title>
                         <Card.Text>{food.content}</Card.Text>
-                        <Card.Text>{foods[index].price}</Card.Text>
-                        <Button variant="primary">상세보기</Button>
+                        <Card.Text>{food.price}</Card.Text>
+                        <Button variant="primary" onClick={()=>{
+                            navigate('/detail/'+ food.id);
+                        }}>상세보기</Button>
                     </Card.Body>
                 </Card>
             
