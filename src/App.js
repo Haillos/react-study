@@ -10,12 +10,12 @@ import logo from './logo.svg';
 //import NewsBlogprac from './newsblog/NewsBlogprac';
 //import Practice002 from  './components/practice/practice-copy/Practice002';
 //import FoodMarket from './FoodMarket/FoodMarket';
-import AppRS from './react-spring/AppRS';
-
+//import AppRS from './react-spring/AppRS';
+import Login from './react-spring/Login'
 
 function App() {
   
-  return <AppRS/>;
+  return <Login/>;
 }
 
 export default App;
