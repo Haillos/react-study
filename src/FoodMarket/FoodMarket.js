@@ -37,7 +37,7 @@ function FoodMarket() {
                     <Nav className="me-auto">
                         <Nav.Link onClick={()=>{navigate("/")}}>Home</Nav.Link>
                         <Nav.Link onClick={()=>{navigate("/detail")}}>FoodDetail</Nav.Link>
-                        <Nav.Link onClick={()=>{navigate("/info")}}>Info</Nav.Link>
+                        <Nav.Link onClick={()=>{navigate("/info")}}>info</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

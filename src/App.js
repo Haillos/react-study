@@ -9,12 +9,13 @@ import logo from './logo.svg';
 //import NewsBlog from './newsblog/NewsBlog';
 //import NewsBlogprac from './newsblog/NewsBlogprac';
 //import Practice002 from  './components/practice/practice-copy/Practice002';
-import FoodMarket from './FoodMarket/FoodMarket';
+//import FoodMarket from './FoodMarket/FoodMarket';
+import AppRS from './react-spring/AppRS';
 
 
 function App() {
   
-  return <FoodMarket/>;
+  return <AppRS/>;
 }
 
 export default App;
